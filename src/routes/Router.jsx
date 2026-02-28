@@ -8,7 +8,7 @@ import GitHubProfile from "../pages/GithubProfile"
 import ManualProfile from "../pages/ManualProfile"
 import Logs from "../pages/Logs"
 import ATSResume from "../pages/ATSResume"
-import ResumeForm from "../components/ResumeForm"
+import ResumeForm from "../pages/ResumeForm"
 import { ResumeContext } from "../contextAPI/ResumeContext"
 
 const Router = () => {
