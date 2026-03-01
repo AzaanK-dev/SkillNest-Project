@@ -68,7 +68,6 @@ const ResumeForm = () =>{
     setLoading(false);
     localStorage.setItem("canAccessATS", "true");
     navigate("/reviewATSResume");
-    localStorage.removeItem("canAccessATS");
   };
 
   return (
