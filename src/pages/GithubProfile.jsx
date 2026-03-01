@@ -4,7 +4,7 @@ import {Github, Lock, Linkedin, Twitter, ChevronDown, ChevronUp,AlertCircle, Che
 } from 'lucide-react';
 import HeroCard from '../components/HeroCard';
 import { GithubProfileContext } from '../contextAPI/GithubProfileContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 
 const GitHubProfile = () => {
   const [username, setUsername] = useState('');
@@ -221,9 +221,12 @@ const GitHubProfile = () => {
           >
             <p>
               Want full control? Try{' '}
-              <a href="#" className="text-cyan-400 hover:text-cyan-300 underline transition-colors">
+              <Link
+                to="/createManualProfile"
+                className="text-cyan-400 hover:text-cyan-300 underline transition-colors"
+              >
                 Manual Profile Mode
-              </a>
+              </Link>
             </p>
           </div>
         </div>
