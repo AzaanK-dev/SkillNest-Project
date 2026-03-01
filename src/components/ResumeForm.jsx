@@ -66,7 +66,6 @@ const ResumeForm = () =>{
     setLoading(true);
     setFormData(form);
     setLoading(false);
-    localStorage.setItem("canAccessATS", "true");
     navigate("/reviewATSResume");
   };
 
